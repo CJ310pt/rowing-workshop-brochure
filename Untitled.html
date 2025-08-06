@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en" class="scroll-smooth"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Indoor Rowing Performance Workshop&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Chosen Palette: Calm Harmony --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Application Structure Plan: The SPA is designed as a single-page, scrolling narrative to act as an interactive digital brochure. The structure follows a sales funnel: 1. Hero (Hook), 2. The Expert (Credibility), 3. The Workshop (Product Details), 4. The Benefits (Value Proposition), 5. The Proof (Social Proof), 6. Tailor the Workshop (Personalization), 7. CTA (Action). This flow is more persuasive than a static email, guiding the gym owner through a story of expertise, value, and opportunity, making the decision to connect feel logical and compelling. The new "Tailor the Workshop" section enhances engagement by offering personalized content. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Visualization &amp; Content Choices: The source email is qualitative, so no charts are used. Interactivity is created through JS-powered tabs for the workshop modules, allowing users to explore content without being overwhelmed. A dynamic client ticker adds visual interest and emphasizes the depth of experience. Key information is presented in styled cards and lists with icons for scannability. The new "Tailor the Workshop" section uses a text input and an LLM to generate dynamic, personalized text, directly addressing user customization needs. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@import url('https://rsms.me/inter/inter.css');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tab-active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #0891B2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #0891B2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f0f9ff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.client-scroller {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: scroll 30s linear infinite;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes scroll {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>0% { transform: translateX(0); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>100% { transform: translateX(-50%); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.scroller-container:hover .client-scroller {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation-play-state: paused;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-stone-50 text-stone-800"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto px-4 sm:px-6 lg:px-8"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 1: Hero --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="home" class="text-center py-20 sm:py-32"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="block"&gt;Elevate Your Gym's&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="block text-cyan-600 mt-2"&gt;Indoor Rowing Performance&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-stone-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Unlock the full potential of the erg for your members with a world-class workshop from an industry-leading master trainer.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="inline-block bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-cyan-700 transition-colors"&gt;Book a Consultation&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 2: The Expert --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="expert" class="py-16 sm:py-24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl sm:text-4xl font-bold"&gt;Meet the Expert&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600"&gt;With a career dedicated to mastering the erg, I bring unparalleled expertise directly to your gym's floor.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-semibold"&gt;British Rowing Master Trainer&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mt-2 text-stone-600"&gt;Certified at the highest level to deliver elite rowing coaching and technique analysis.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-semibold"&gt;Official Hyrox Trainer&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mt-2 text-stone-600"&gt;Creator of the official indoor rowing technique videos for the Hyrox website, setting the standard for performance.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow md:col-span-2 lg:col-span-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-semibold"&gt;Coach to Champions&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mt-2 text-stone-600"&gt;Proven success coaching World Record Holders, CrossFit Champions, Hyrox Champions, and Olympic Athletes.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 3: The Workshop --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="workshop" class="py-16 sm:py-24 bg-white rounded-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl sm:text-4xl font-bold"&gt;What Your Members Will Master&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600"&gt;This isn't just another rowing class. It's a comprehensive performance overhaul distilled into four key modules. Explore what your members will learn:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-12 max-w-4xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col sm:flex-row border-b border-stone-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button data-tab="efficiency" class="tab-button flex-1 py-3 px-4 font-semibold text-stone-600 border-b-2 border-transparent hover:bg-stone-50 transition-colors tab-active"&gt;Efficiency&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button data-tab="technique" class="tab-button flex-1 py-3 px-4 font-semibold text-stone-600 border-b-2 border-transparent hover:bg-stone-50 transition-colors"&gt;Technique&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button data-tab="training" class="tab-button flex-1 py-3 px-4 font-semibold text-stone-600 border-b-2 border-transparent hover:bg-stone-50 transition-colors"&gt;Training Plans&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button data-tab="relay" class="tab-button flex-1 py-3 px-4 font-semibold text-stone-600 border-b-2 border-transparent hover:bg-stone-50 transition-colors"&gt;Relay Tactics&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="efficiency" class="tab-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-cyan-700"&gt;Maximizing Efficiency&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-lg text-stone-600"&gt;Learn how to generate maximum power with every single stroke. We'll break down the force curve and teach drills to eliminate wasted energy, ensuring every pull counts towards a faster time.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="technique" class="tab-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-cyan-700"&gt;Perfecting Technique&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-lg text-stone-600"&gt;Receive detailed guidance on optimal body mechanics, from the catch to the finish. This module focuses on creating a powerful, repeatable, and safe stroke to boost performance and significantly reduce injury risk.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="training" class="tab-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-cyan-700"&gt;Effective Training Plans&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-lg text-stone-600"&gt;Discover strategies for integrating the rower into diverse training programs. We'll cover programming for strength, endurance, and speed, making the erg a more effective tool for any fitness goal.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="relay" class="tab-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-cyan-700"&gt;Relay Team Setup &amp; Training&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-lg text-stone-600"&gt;Gain a competitive edge with specific tactics for team events. This module is perfect for Hyrox preparation or in-house CrossFit challenges, covering transitions, pacing, and team strategy.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 4: The Benefits --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="benefits" class="py-16 sm:py-24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl sm:text-4xl font-bold"&gt;A Clear Advantage for Your Gym&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600"&gt;Investing in this workshop provides tangible benefits for both your members' performance and your gym's reputation.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-xl shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-semibold"&gt;For Your Members&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="mt-4 space-y-3 text-lg text-stone-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;&lt;span class="text-cyan-500 mr-3 mt-1"&gt;✔&lt;/span&gt;&lt;span&gt;Faster rowing times and improved WOD performance.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;&lt;span class="text-cyan-500 mr-3 mt-1"&gt;✔&lt;/span&gt;&lt;span&gt;Reduced risk of back and shoulder injuries from poor form.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;&lt;span class="text-cyan-500 mr-3 mt-1"&gt;✔&lt;/span&gt;&lt;span&gt;Increased confidence and enjoyment on the rower.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-xl shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-semibold"&gt;For Your Gym&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="mt-4 space-y-3 text-lg text-stone-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;&lt;span class="text-cyan-500 mr-3 mt-1"&gt;✔&lt;/span&gt;&lt;span&gt;Adds unique, premium value to your membership offering.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;&lt;span class="text-cyan-500 mr-3 mt-1"&gt;✔&lt;/span&gt;&lt;span&gt;Positions your gym as a leader in performance training.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;&lt;span class="text-cyan-500 mr-3 mt-1"&gt;✔&lt;/span&gt;&lt;span&gt;Creates a new revenue stream and member engagement event.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 5: The Proof --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="proof" class="py-16 sm:py-24 overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl sm:text-4xl font-bold"&gt;Trusted By The Best in The World&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600"&gt;My methods are tested and proven at the highest levels of competition.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="scroller-container mt-12 w-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="client-scroller"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-shrink-0 text-2xl font-semibold text-stone-500 mx-8"&gt;Olympic Athletes&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-shrink-0 text-2xl font-semibold text-stone-500 mx-8"&gt;Hyrox World Champions&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-shrink-0 text-2xl font-semibold text-stone-500 mx-8"&gt;CrossFit Games Champions&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-shrink-0 text-2xl font-semibold text-stone-500 mx-8"&gt;Indoor Rowing World Record Holders&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Duplicate for seamless scroll --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-shrink-0 text-2xl font-semibold text-stone-500 mx-8"&gt;Olympic Athletes&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-shrink-0 text-2xl font-semibold text-stone-500 mx-8"&gt;Hyrox World Champions&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-shrink-0 text-2xl font-semibold text-stone-500 mx-8"&gt;CrossFit Games Champions&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-shrink-0 text-2xl font-semibold text-stone-500 mx-8"&gt;Indoor Rowing World Record Holders&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 6: Tailor the Workshop --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="tailor-workshop" class="py-16 sm:py-24 bg-white rounded-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl sm:text-4xl font-bold"&gt;Tailor the Workshop ✨&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600"&gt;Tell us about your gym's unique needs or your members' specific goals, and see how this workshop can be perfectly customized for you.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-12 max-w-2xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;textarea id="gym-needs-input" class="w-full p-4 border border-stone-300 rounded-lg focus:ring-cyan-500 focus:border-cyan-500 text-stone-700" rows="6" placeholder="e.g., 'Our members are mostly beginners and need foundational technique,' or 'We focus heavily on endurance events and need advanced pacing strategies.'"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mt-4 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button id="generate-customization" class="bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-cyan-700 transition-colors"&gt;Generate Customization ✨&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="customization-output" class="mt-8 p-6 bg-stone-50 rounded-lg border border-stone-200 text-stone-700 hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold text-lg mb-2"&gt;Here's how we can tailor the workshop for you:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="customization-text"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="loading-indicator" class="hidden text-center mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="animate-spin inline-block w-6 h-6 border-4 border-cyan-500 border-t-transparent rounded-full"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-stone-500 mt-2"&gt;Generating insights...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 7: CTA --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="contact" class="bg-cyan-700 my-16 rounded-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="py-16 px-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl sm:text-4xl font-bold text-white"&gt;Ready to Elevate Your Gym?&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 max-w-2xl mx-auto text-lg text-cyan-100"&gt;Let's have a quick 15-minute chat to discuss how this workshop can be tailored to your gym's specific needs.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="mailto:your-email@example.com?subject=Rowing Workshop Inquiry" class="inline-block bg-white text-cyan-700 font-bold py-3 px-8 rounded-lg text-lg hover:bg-stone-100 transition-colors"&gt;Schedule Your Free Call&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', function() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const tabs = document.querySelectorAll('.tab-button');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const contents = document.querySelectorAll('.tab-content');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>tabs.forEach(tab =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>tab.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const target = tab.getAttribute('data-tab');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>tabs.forEach(t =&gt; t.classList.remove('tab-active'));</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>tab.classList.add('tab-active');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>contents.forEach(content =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (content.id === target) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>content.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>content.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Gemini API Integration for Workshop Customization</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const generateButton = document.getElementById('generate-customization');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const gymNeedsInput = document.getElementById('gym-needs-input');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const customizationOutput = document.getElementById('customization-output');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const customizationText = document.getElementById('customization-text');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const loadingIndicator = document.getElementById('loading-indicator');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>generateButton.addEventListener('click', async () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const userNeeds = gymNeedsInput.value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (!userNeeds) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>customizationText.innerHTML = '&lt;p class="text-red-500"&gt;Please describe your gym\'s needs to get a customized response.&lt;/p&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>customizationOutput.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>customizationText.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>customizationOutput.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>loadingIndicator.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>generateButton.disabled = true;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const prompt = `As an expert rowing coach offering a workshop, explain how your indoor rowing workshop can be tailored to a gym with the following specific needs: "${userNeeds}". Focus on how the workshop modules (Maximizing Efficiency, Perfecting Technique, Effective Training Plans, Relay Team Setup &amp; Training) can address these specific needs. Keep the response concise and compelling, around 100-150 words.`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>let chatHistory = [];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>chatHistory.push({ role: "user", parts: [{ text: prompt }] });</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const payload = { contents: chatHistory };</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const apiKey = ""; // If you want to use models other than gemini-2.5-flash-preview-05-20 or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>let retries = 0;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const maxRetries = 5;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const baseDelay = 1000; // 1 second</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>while (retries &lt; maxRetries) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const response = await fetch(apiUrl, {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>headers: { 'Content-Type': 'application/json' },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>body: JSON.stringify(payload)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (response.status === 429) { // Too Many Requests</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>const delay = baseDelay * Math.pow(2, retries) + Math.random() * 1000;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>retries++;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>await new Promise(resolve =&gt; setTimeout(resolve, delay));</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>continue;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const result = await response.json();</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (result.candidates &amp;&amp; result.candidates.length &gt; 0 &amp;&amp;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>result.candidates[0].content &amp;&amp; result.candidates[0].content.parts &amp;&amp;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>result.candidates[0].content.parts.length &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>const text = result.candidates[0].content.parts[0].text;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>customizationText.innerHTML = `&lt;p&gt;${text}&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>customizationText.innerHTML = '&lt;p class="text-red-500"&gt;Could not generate a customized response. Please try again.&lt;/p&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>break; // Exit loop on success</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>console.error('Error calling Gemini API:', error);</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (retries &lt; maxRetries - 1) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>const delay = baseDelay * Math.pow(2, retries) + Math.random() * 1000;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>retries++;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>await new Promise(resolve =&gt; setTimeout(resolve, delay));</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>customizationText.innerHTML = '&lt;p class="text-red-500"&gt;An error occurred while generating the response. Please try again later.&lt;/p&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} finally {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>loadingIndicator.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>generateButton.disabled = false;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
